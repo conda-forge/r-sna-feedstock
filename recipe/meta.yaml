@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1001
+  number: 1002
   skip: true  # [win32]
 
   rpaths:
@@ -25,7 +25,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}        # [not win]
-    - {{native}}toolchain        # [win]
+    - {{ compiler('m2w64_c') }}        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
     - {{posix}}sed  # [win]
@@ -58,6 +58,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - dpryan79
     - johanneskoester
     - bgruening
