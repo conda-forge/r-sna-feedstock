@@ -3,7 +3,7 @@ About r-sna
 
 Home: http://www.statnet.org
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD-3-Clause
 
