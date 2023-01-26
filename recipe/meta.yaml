@@ -1,4 +1,4 @@
-{% set version = "2.7" %}
+{% set version = "2.7-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sna_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sna/sna_{{ version }}.tar.gz
-  sha256: 440fa4347c7b437e93c73127d34894068afd240d3128898474a7201e740a434d
+  sha256: 60daf217c15b6fa335804600dc1e6eb73594b6e794faa4f82a2275c4d8570ae3
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
