@@ -3,6 +3,7 @@ About r-sna-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sna-feedstock/blob/main/LICENSE.txt)
 
+
 About r-sna
 -----------
 
@@ -11,6 +12,7 @@ Home: http://www.statnet.org
 Package license: GPL-2.0-or-later
 
 Summary: A range of tools for social network analysis, including node and graph-level indices, structural distance and covariance methods, structural equivalence detection, network regression, random graph generation, and 2D/3D network visualization.
+
 About r-sna
 -----------
 
@@ -167,7 +169,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
