@@ -1,6 +1,5 @@
 {% set version = "2.7-2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-sna
@@ -13,8 +12,7 @@ source:
   sha256: 7b214626967feb9389e743e50b919dd4b00e7436b2355fd068c873c45ac7a7cd
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,7 +23,9 @@ requirements:
     - r-network                  # [build_platform != target_platform]
     - r-statnet.common           # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -37,7 +37,6 @@ requirements:
     - r-statnet.common
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-network
     - r-statnet.common
 
