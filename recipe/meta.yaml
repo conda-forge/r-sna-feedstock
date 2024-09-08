@@ -1,4 +1,4 @@
-{% set version = "2.7-2" %}
+{% set version = "2.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sna_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sna/sna_{{ version }}.tar.gz
-  sha256: 7b214626967feb9389e743e50b919dd4b00e7436b2355fd068c873c45ac7a7cd
+  sha256: f20adb8e505cd56ae9ed0d9675337b4fab15d5dbad1bff3562edd971872a994c
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
